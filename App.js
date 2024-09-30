@@ -1,7 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+// chaves sao inseridas quando tem mais de uma vareavel no import
+import  dados  from './service/dados.js';
 
 export default function App() {
+  console.log(dados.state, dados.cities);
   return (
     <View style={styles.container}>
       <Text>teste de alterar</Text>
